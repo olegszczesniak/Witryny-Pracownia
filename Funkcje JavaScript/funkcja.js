@@ -1,68 +1,48 @@
-
-/*
-
-function Suma(a, b)
+document.write ("Zadanie 1 <br>");
+function netto (brutto)
 {
-
-    var c = a + b;
-    return c;
-
+    var netto = brutto - (brutto * 0.05) - (brutto * 0.1) - (brutto * 0.09) - (brutto * 0.15);
+    return netto;
 }
+a = prompt("Wprowadz");
+document.write( netto(a));
 
-document.write(suma(5,6));
-
-
-function wynik(x,y)
+document.write ("<br> <br> Zadanie 2 <br>");
+function wampir (wiek)
 {
-var s = x + y;
-return s;
-}
-var suma = wynik (19,7) + 34;
-document.write ("Wynik dodawania: " + suma);
-
-
-function trzy (z)
-{
-for (var i = 0; i <= z; i++) {
-if ((i%3) != 0)
-continue;
-document.write(i + "; ");
-}
-document.write("</br>");
-}
-trzy (90);
-trzy (120);
-
-
-function lista_arg()
-{
-
-
-return arguments;
+    var tydzien
+    if (wiek < 200) {
+        tydzien = 5*7;
+    }
+    else if  (wiek > 200) {
+        tydzien = 4*7;
+    }
+    return tydzien;
 
 }
+document.write (wampir(250));
 
-
-
-function suma_dow()
-{
-var i = 0;
-var l_param = arguments.length;
-for (i = 0; i < l_param; i++)
-{
-wynik += arguments[i];
+document.write ("<br> <br> Zadanie 3 <br>");
+function parzysta(liczba)
+ {
+    if (liczba % 2 == 0 && liczba > 0)
+     {
+        zwrot  = "TAK";
+    } 
+    else {
+        zwrot  = "NIE";
+    }
+    return zwrot;
+ 
 }
-return wynik;
-}
-suma_dow(3, 5, 7);
-document.write("Suma argumentów:" + wynik);
+document.write ( parzysta(3));
 
-*/
-
-let a = 10;
-{
-let a = 15;
-document.write("Zmienna w bloku: " + a);
+document.write ("<br> <br> Zadanie 4 <br>");
+function energia (wartosc,matma,granie){
+    var iloscmatma = wartosc/matma * 100
+    var iloscgranie = wartosc/granie * 100
+    return (iloscmatma,iloscmatma, iloscgranie,iloscgranie, wartosc: wartosc);
+    
 }
-document.write("Zmienna globalna: " + a);
+
 
