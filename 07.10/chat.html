@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Chat</h2>
+    </header>
+ 
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Chaty</h3>
+            <ul>
+                <li>Ogólny</li>
+                <li>Tematyczne
+                    <ol>
+                        <li>Turystyczny</li>
+                        <li>Żeglarski</li>
+                        <li>Filatelistyczny</li>
+                        <li>Hodowla zwierzątek domowych</li>
+                    </ol>
+                </li>
+            </ul>
+            <h3>Uczestnicy</h3>
+            <p>Jolanta Nowak</p>
+            <img src="Jolka.jpg" alt="Jolanta Nowak">
+            <p>Krzysztof Łukasiński</p>
+            <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+        </aside>
+ 
+        <main class="main">
+            <div class="chat">
+                <div class="message jolanta">
+                    <img src="Jolka.jpg" alt="Jolanta Nowak">
+                    <p>Cześć idziesz jutro do kina?</p>
+                </div>
+                <div class="message krzysztof">
+                    <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+                    <p>Tak! A ty?</p>
+                </div>
+            </div>
+            <div class="input-area">
+                <label>Wpisz wiadomość:</label>
+                <input type="text" placeholder="Twoja wiadomość">
+                <button type="button">Wyślij</button>
+            </div>
+            <button type="button">Generuj losową odpowiedź</button>
+        </main>
+    </div>
+ 
+    <footer>
+        <h5>Chat wykonał: [Numer zdającego]</h5>
+    </footer>
+</body>
+</html>
